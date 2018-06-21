@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:local="clr-namespace:Gastropod"
+       Route="gastropod"
+       RouteHost="www.xamarin.com"
+       RouteScheme="http"
+       Title="Gastropods"
+       x:Class="Gastropod.Shell">
+
+    <Shell.Resources>
+        <ResourceDictionary Source="Styles/Global.xaml"/>
+    </Shell.Resources>
+
+    <Shell.FlyoutHeader>
+        <ContentView HeightRequest="300" BackgroundColor="#3498DB">
+            <Label Text="Gastropods" TextColor="White" FontSize="48" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </ContentView>
+    </Shell.FlyoutHeader>
+
+    <ShellContent Route="home" Title="Home" ContentTemplate="{DataTemplate local:MainPage}"/>
+    <ShellContent Route="feed" Title="Feed" ContentTemplate="{DataTemplate local:FeedPage}" Style="{StaticResource GreenShell}"/>
+</Shell>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Style x:Key="BaseStyle" TargetType="Element">
+        <Setter Property="Shell.ShellBackgroundColor" Value="#3498DB" />
+        <Setter Property="Shell.ShellForegroundColor" Value="White" />
+        <Setter Property="Shell.ShellTitleColor" Value="White" />
+        <Setter Property="Shell.ShellDisabledColor" Value="#B4FFFFFF" />
+        <Setter Property="Shell.ShellUnselectedColor" Value="#95FFFFFF" />
+    </Style>
+    <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+    <Style x:Key="GreenShell" TargetType="Element" BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="Shell.ShellBackgroundColor" Value="Green" />
+    </Style>
+</ResourceDictionary>
