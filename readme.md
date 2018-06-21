@@ -13,7 +13,7 @@ Shell is a new container for your Xamarin.Forms applications that provides sever
 
 ## Preview NuGet
 
-We have posted a preview of Xamarin.Forms that includes a very early preview of Shell. [Download the packages here](https://devdiv.visualstudio.com/0bdbc590-a062-4c3f-b0f6-9383f67865ee/_apis/build/builds/1794617/artifacts?artifactName=NuGet&api-version=5.0-preview.3&%24format=zip) and add them to your local NuGet source.
+We have posted a preview of Xamarin.Forms that includes a very early preview of Shell. [Download the packages here](https://github.com/davidortinau/Gastropods/raw/master/Bits/NuGet.zip) and add them to your local NuGet source.
 
 ## Limitations
 
