@@ -54,7 +54,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.*" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.*" />
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.2.0.598293</Version>
+      <Version>3.2.0.599850</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +84,10 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\grid.png" />
+    <AndroidResource Include="Resources\drawable\home.png" />
+    <AndroidResource Include="Resources\drawable\homeflyout.png" />
+    <AndroidResource Include="Resources\drawable\gear.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

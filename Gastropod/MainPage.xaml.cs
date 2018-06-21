@@ -13,5 +13,10 @@ namespace Gastropod
         {
             InitializeComponent();
         }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            (App.Current.MainPage as Shell).GoToAsync(new ShellNavigationState("http://www.xamarin.com/gastropod/tabsandwich/activity/notifications"), true);
+        }
     }
 }

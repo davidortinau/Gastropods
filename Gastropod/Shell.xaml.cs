@@ -11,7 +11,7 @@ namespace Gastropod
         {
             InitializeComponent();
 
-            //CurrentItem = _home;
+            Routing.RegisterRoute("notifications", typeof(NotificationsPage));
         }
     }
 }

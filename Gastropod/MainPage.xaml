@@ -3,5 +3,6 @@
     <StackLayout>
         <!-- Place new controls here -->
         <Label Text="Home Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="To Notifications Page" Clicked="Handle_Clicked" />
     </StackLayout>
 </ContentPage>

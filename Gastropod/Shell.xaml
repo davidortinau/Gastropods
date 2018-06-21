@@ -20,4 +20,13 @@
 
     <ShellContent Route="home" Title="Home" ContentTemplate="{DataTemplate local:MainPage}"/>
     <ShellContent Route="feed" Title="Feed" ContentTemplate="{DataTemplate local:FeedPage}" Style="{StaticResource GreenShell}"/>
+
+    <ShellItem Route="tabsandwich" Title="Tab Sandwich">
+        <ShellContent Route="home" Style="{StaticResource GreenShell}" Title="Home" Icon="home.png" FlyoutIcon="homeflyout.png" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellSection Route="activity" Title="Activity" Icon="grid.png" Style="{StaticResource GreenShell}">
+            <ShellContent Route="shared" Title="Shared" ContentTemplate="{DataTemplate local:ActivityPage}" />
+            <ShellContent Route="notifications" Title="Notifications" ContentTemplate="{DataTemplate local:NotificationsPage}" />
+        </ShellSection>
+        <ShellContent Route="updates" Title="Updates" Icon="gear.png" ContentTemplate="{DataTemplate local:UpdatesPage}" />
+    </ShellItem>
 </Shell>

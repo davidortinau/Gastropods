@@ -8,15 +8,13 @@ namespace Gastropod
 {
     public partial class FeedPage : ContentPage
     {
-        public ObservableCollection<Seashell> Items { get; set; }
+        public ObservableCollection<Seashell> Items { get; set; } = App.Seashells;
 
         public FeedPage()
         {
             InitializeComponent();
             Shell.SetSearchHandler(this, new FeedSearchHandler());
-
-            Items = App.Seashells;
-
+            Title = "Gastropods";
             BindingContext = this;
         }
     }
