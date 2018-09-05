@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:local="clr-namespace:Gastropod"
+       Route="gastropod"
+       RouteHost="www.xamarin.com"
+       RouteScheme="http"
+       FlyoutBehavior="Disabled"
+       Title="Gastropods"
+       x:Class="Gastropod.ShellBottomTabs">
+    
+    
+    
+    <ShellItem>
+        <ShellContent Title="Page 1" Icon="home.png">
+            <local:MainPage/>
+        </ShellContent>
+        <ShellContent Title="Page 2" Icon="home.png">
+            <local:MainPage/>
+        </ShellContent>
+    </ShellItem>
+    
+</Shell>

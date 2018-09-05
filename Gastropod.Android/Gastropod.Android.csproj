@@ -88,6 +88,11 @@
     <AndroidResource Include="Resources\drawable\home.png" />
     <AndroidResource Include="Resources\drawable\homeflyout.png" />
     <AndroidResource Include="Resources\drawable\gear.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\iconXamarin.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\iconXamarin.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\iconXamarin.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\iconXamarin.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\iconXamarin.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

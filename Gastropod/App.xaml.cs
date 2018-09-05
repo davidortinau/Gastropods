@@ -12,6 +12,7 @@ namespace Gastropod
             InitializeComponent();
 
             MainPage = new Gastropod.Shell();
+            // Or replace this with any of the Shell variants in the root of this project
         }
 
         protected override void OnStart()

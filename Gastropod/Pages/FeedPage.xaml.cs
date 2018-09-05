@@ -13,6 +13,7 @@ namespace Gastropod
         public FeedPage()
         {
             InitializeComponent();
+            Shell.SetShellTitleColor(this, Color.Blue);
             Shell.SetSearchHandler(this, new FeedSearchHandler());
             Title = "Gastropods";
             BindingContext = this;
