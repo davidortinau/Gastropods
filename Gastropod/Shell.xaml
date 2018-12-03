@@ -2,18 +2,23 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
        xmlns:local="clr-namespace:Gastropod"
-       Route="gastropod"
+       Route="gastropods"
        RouteHost="www.xamarin.com"
-       RouteScheme="http"
+       RouteScheme="app"
+       FlyoutBackgroundColor="Teal"
+       BackgroundColor="Red"
        Title="Gastropods"
        x:Class="Gastropod.Shell">
-
-
     <Shell.FlyoutHeader>
         <ContentView HeightRequest="300">
             <Label Text="Gastropods" FontSize="48" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
         </ContentView>
     </Shell.FlyoutHeader>
+    
+    <Shell.MenuItems>
+        <MenuItem Text="A Menu Item" />
+        <MenuItem Text="Anothing Menu Item" />
+    </Shell.MenuItems>
     
     <ShellItem FlyoutIcon="iconXamarin.png" Title="Home">
         <ShellContent Route="home" ContentTemplate="{DataTemplate local:MainPage}"/>

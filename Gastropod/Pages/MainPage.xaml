@@ -5,7 +5,7 @@
              Title="Store Home"
              x:Class="Gastropod.MainPage">
     <StackLayout>
-        <!-- Place new controls here -->
         <Label Text="Home Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Goto Notifications" HorizontalOptions="Center" Clicked="Handle_Clicked"/>
     </StackLayout>
 </ContentPage>

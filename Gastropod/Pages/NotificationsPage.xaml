@@ -4,7 +4,6 @@
              Title="Notifications"
              x:Class="Gastropod.NotificationsPage">
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Notifications Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label Text="{Binding Greeting}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>

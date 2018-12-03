@@ -11,7 +11,10 @@ namespace Gastropod
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("notifications", typeof(NotificationsPage));
+            //Routing.RegisterRoute("notifications", typeof(NotificationsPage));
+
+            Shell.SetShellTitleColor(this, Color.Blue);
+            Shell.SetShellUnselectedColor(this, Color.Red);
         }
     }
 }

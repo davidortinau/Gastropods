@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.599850" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.1.6913" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="FlyoutHeader.xaml.cs" />
