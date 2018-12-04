@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.599850" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.8055-pre1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="FlyoutHeader.xaml.cs" />
@@ -14,7 +14,23 @@
     <EmbeddedResource Remove="FlyoutHeader.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Images\photo.png" />
+    <None Remove="Images\shells_01.jpg" />
+    <None Remove="Images\shell_01.jpg" />
+    <None Remove="Images\snail_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\photo.png" />
+    <EmbeddedResource Include="Images\shells_01.jpg" />
+    <EmbeddedResource Include="Images\shell_01.jpg" />
+    <EmbeddedResource Include="Images\snail_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Styles\" />
-    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\CameraPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

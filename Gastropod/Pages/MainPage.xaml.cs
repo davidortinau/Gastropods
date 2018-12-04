@@ -16,7 +16,12 @@ namespace Gastropod
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            (App.Current.MainPage as Shell).GoToAsync(new ShellNavigationState("http://www.xamarin.com/gastropod/tabsandwich/activity/notifications"), true);
+            (App.Current.MainPage as Shell).GoToAsync(new ShellNavigationState("app://xamarin.com/gastropod/tabsandwich/activity/notifications"), true);
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            (App.Current.MainPage as Shell).DisplayAlert("Alert", "welcome to the jungle", "Bye");
         }
     }
 }

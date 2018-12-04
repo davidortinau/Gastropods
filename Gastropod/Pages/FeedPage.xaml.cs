@@ -15,6 +15,7 @@ namespace Gastropod
             InitializeComponent();
             Shell.SetShellTitleColor(this, Color.Blue);
             Shell.SetSearchHandler(this, new FeedSearchHandler());
+            Shell.SetFlyoutBehavior(this, FlyoutBehavior.Disabled);
             Title = "Gastropods";
             BindingContext = this;
         }

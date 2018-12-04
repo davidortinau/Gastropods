@@ -19,6 +19,7 @@ namespace Gastropod.Droid
 
             base.OnCreate(bundle);
 
+            global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental");
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }

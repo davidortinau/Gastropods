@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Take a Photo"
+             x:Class="Gastropod.CameraPage">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" AlignContent="Center"> 
+            <Label Text="CameraView Coming Soon!" />
+            <Label x:Name="PayloadLabel"
+                   Text="Broken"
+                   TextColor="Red" FontSize="34"/>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

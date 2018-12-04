@@ -3,27 +3,38 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
        xmlns:local="clr-namespace:Gastropod"
        Route="gastropod"
-       RouteHost="www.xamarin.com"
-       RouteScheme="http"
+       RouteHost="xamarin.com"
+       RouteScheme="app"
+       FlyoutHeaderBehavior="CollapseOnScroll"
        Title="Gastropods"
+       x:Name="self"
        x:Class="Gastropod.Shell">
 
-
     <Shell.FlyoutHeader>
-        <ContentView HeightRequest="300">
-            <Label Text="Gastropods" FontSize="48" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-        </ContentView>
+        <Grid HeightRequest="300">
+            <Image Source="{local:ImageResource Gastropod.Images.shells_01.jpg}"
+                   Aspect="AspectFill" 
+                   HeightRequest="300" 
+                   HorizontalOptions="FillAndExpand"/>
+            <Label Text="Gastropods" TextColor="White" FontSize="48" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </Grid>
     </Shell.FlyoutHeader>
     
     <ShellItem FlyoutIcon="iconXamarin.png" Title="Home">
-        <ShellContent Route="home" ContentTemplate="{DataTemplate local:MainPage}"/>
-    </ShellItem>
-    
-    <ShellItem FlyoutIcon="iconXamarin.png" Title="Feed">
-        <ShellContent Route="feed" ContentTemplate="{DataTemplate local:FeedPage}"/>
+        <ShellSection>
+            <ShellContent Route="home">
+                <local:MainPage/>
+            </ShellContent>
+        </ShellSection>
     </ShellItem>
 
-    <ShellItem Route="tabsandwich" Title="Tab Sandwich" FlyoutIcon="iconXamarin.png">
+    <ShellItem FlyoutIcon="iconXamarin.png" Title="Feed" Style="{StaticResource SecondaryShell}">
+        <ShellSection>
+            <ShellContent Route="feed" ContentTemplate="{DataTemplate local:FeedPage}"/>
+        </ShellSection>
+    </ShellItem>
+
+    <ShellItem Route="tabsandwich" Title="Tab Sandwich" FlyoutIcon="iconXamarin.png" Style="{StaticResource TertiaryShell}">
         <ShellSection Route="activity" Title="Activity" Icon="iconXamarin.png">
             <ShellContent Route="shared" Title="Shared" ContentTemplate="{DataTemplate local:ActivityPage}" />
             <ShellContent Route="notifications" Title="Notifications" ContentTemplate="{DataTemplate local:NotificationsPage}" />
@@ -37,15 +48,16 @@
     <ShellItem Route="single" Title="Single Page" FlyoutIcon="iconXamarin.png">
         <ShellContent Route="home" Title="Home" Icon="iconXamarin.png" ContentTemplate="{DataTemplate local:MainPage}" />
     </ShellItem>
-    
-    <ShellItem Route="toptabs" Title="Top Tabs" FlyoutIcon="iconXamarin.png">
+
+    <ShellItem Route="toptabs" Title="Top Tabs" FlyoutIcon="iconXamarin.png" Style="{StaticResource QuaternaryShell}">
         <ShellSection Route="activity" Title="Activity" Icon="iconXamarin.png" >
             <ShellContent Route="shared" Title="Shared" ContentTemplate="{DataTemplate local:ActivityPage}" />
             <ShellContent Route="notifications" Title="Notifications" ContentTemplate="{DataTemplate local:NotificationsPage}" />
+            <ShellContent Route="photo" Title="Photo" ContentTemplate="{DataTemplate local:CameraPage}" />
         </ShellSection>
     </ShellItem>
-    
-    <ShellItem Route="bottomtabs" Title="Bottom Tabs" FlyoutIcon="iconXamarin.png">
+
+    <ShellItem Route="bottomtabs" Title="Bottom Tabs" FlyoutIcon="iconXamarin.png" Style="{StaticResource QuinaryShell}">
         <ShellSection Route="home" Title="Home" Icon="home.png">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </ShellSection>
@@ -58,5 +70,19 @@
         <ShellSection Route="feed" Title="Feed" Icon="iconXamarin.png">
             <ShellContent ContentTemplate="{DataTemplate local:FeedPage}" />
         </ShellSection>
+        <ShellSection Route="camera" Title="Photo" Icon="photo.png">
+            <ShellContent ContentTemplate="{DataTemplate local:CameraPage}" />
+        </ShellSection>
+        <ShellSection Route="notifications" Title="Notifications" Icon="iconXamarin.png">
+            <ShellContent ContentTemplate="{DataTemplate local:NotificationsPage}" />
+        </ShellSection>
     </ShellItem>
+
+    <Shell.MenuItems>
+        <MenuItem Text="Take a Photo" Icon="photo.png"
+                  BindingContext="{x:Reference self}"
+                  Command="{Binding TakePhotoCommand}"/>
+    </Shell.MenuItems>
+
+    
 </Shell>

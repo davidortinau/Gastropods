@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:Gastropod"
              Title="Store Home"
              x:Class="Gastropod.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Home Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <FlexLayout AlignItems="Center" AlignContent="Center" Direction="Column">
+        <Label Text="Home Page" />
+        <Button Text="Action Sheet" Clicked="Button_Clicked"/>
+    </FlexLayout>
 </ContentPage>
