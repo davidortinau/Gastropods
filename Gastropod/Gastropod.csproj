@@ -18,6 +18,7 @@
     <None Remove="Images\shells_01.jpg" />
     <None Remove="Images\shell_01.jpg" />
     <None Remove="Images\snail_01.jpg" />
+    <None Remove="ViewModels\CameraViewModel.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\photo.png" />
@@ -27,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Styles\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Pages\CameraPage.xaml">
