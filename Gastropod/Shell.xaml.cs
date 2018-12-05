@@ -21,18 +21,7 @@ namespace Gastropod
 
         void GoToCamera()
         {
-            Console.WriteLine("go");
-
-            var b = new UriBuilder("app://xamarin.com/gastropod/toptabs/activity/photo");
-            b.Query = "payload=4.0";
-            //(App.Current.MainPage as Xamarin.Forms.Shell).GoToAsync("app:///gastropod/toptabs/activity/photo?payload=4.0", true);
-            (App.Current.MainPage as Xamarin.Forms.Shell).GoToAsync(
-                new ShellNavigationState(
-                    b.Uri
-                ), 
-                false
-            );
-
+            (App.Current.MainPage as Xamarin.Forms.Shell).GoToAsync("app:///gastropod/toptabs/activity/photo?payload=4.0", true);
             (App.Current.MainPage as Xamarin.Forms.Shell).FlyoutIsPresented = false;
         }
     }

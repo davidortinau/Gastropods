@@ -6,6 +6,5 @@
              x:Class="Gastropod.MainPage">
     <FlexLayout AlignItems="Center" AlignContent="Center" Direction="Column">
         <Label Text="Home Page" />
-        <Button Text="Action Sheet" Clicked="Button_Clicked"/>
     </FlexLayout>
 </ContentPage>
