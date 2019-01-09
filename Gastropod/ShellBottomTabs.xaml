@@ -12,12 +12,16 @@
     
     
     <ShellItem>
-        <ShellContent Title="Page 1" Icon="home.png">
-            <local:MainPage/>
-        </ShellContent>
-        <ShellContent Title="Page 2" Icon="home.png">
-            <local:MainPage/>
-        </ShellContent>
+        <ShellSection>
+           <ShellContent Title="Page 1" Icon="home.png">
+               <local:MainPage/>
+           </ShellContent>
+        </ShellSection>
+        <ShellSection>
+            <ShellContent Title="Page 2" Icon="home.png">
+                <local:MainPage/>
+            </ShellContent>
+        </ShellSection>
     </ShellItem>
     
 </Shell>
