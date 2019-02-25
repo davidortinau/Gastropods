@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Gastropod"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             Visual="Material"
+             Title="Material"
+             x:Class="Gastropod.MaterialPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Label Text="Page using Visual=&quot;Material&quot;" />
+            <Entry Text="Material Entry"/>
+            <Button Text="Material Button" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
