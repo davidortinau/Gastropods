@@ -186,7 +186,7 @@ In the future we'll be adding an iOS themed Shell, and a Xamarin Shell where iOS
 
 After you have some time to explore `Shell` and take a run at various scenarios, please take a few minutes to complete this survey.
 
-[Take the Survey (coming soon)](#tbd)
+[Take the Survey](https://www.surveymonkey.com/r/X9CJNRH)
 
 Find something that isn't working? Could be it's not yet implemented, but [file an issue](https://github.com/xamarin/Xamarin.Forms/issues/new) nevertheless. Prefix the title with `[Shell]` please.
 
