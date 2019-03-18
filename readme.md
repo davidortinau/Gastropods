@@ -91,15 +91,11 @@ Here is an example of a 2 page app with tabs at the bottom:
   <ShellItem>
 
     <ShellSection Title="Home" Icon="home.png">
-      <ShellContent>
-        <local:HomePage />
-      </ShellContent>
+      <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
     </ShellSection>
 
     <ShellSection Title="Notifications" Icon="bell.png">
-      <ShellContent>
-        <local:NotificationsPage />
-      </ShellContent>
+      <ShellContent ContentTemplate="{DataTemplate local:NotificationsPage}" />
     </ShellSection>
 
   </ShellItem>
@@ -108,7 +104,7 @@ Here is an example of a 2 page app with tabs at the bottom:
 
 ## Adding Pages
 
-Each page or screen in a `Shell` app is represented by a `ShellContent`. The `ContentPage` is set via a `DataTemplate` to prevent the pages from being instantiated until they are required
+Each page or screen in a `Shell` app is represented by a `ShellContent`. The `ContentPage` should be set via a `DataTemplate` to prevent the pages from being instantiated until they are required
 
 ```
 <ShellContent Route="home" Title="Home" ContentTemplate="{DataTemplate local:MainPage}"/>
@@ -168,19 +164,6 @@ The Xamarin.Forms [shell branch](https://github.com/xamarin/Xamarin.Forms/blob/s
     </Style>
 </Shell.Resources>
 ```
-
-At this time `Shell` is implementing [Material Design](https://material.io/). Some Material appearance options are available to you now:
-
-```
-<ShellItem.ShellAppearance>
-      <MaterialShellAppearance NavBarCollapseStyle="Full" TabBarCollapseStyle="Full" UseSwipeGesture="false">
-</ShellItem.ShellAppearance>
-```
-
-In the future we'll be adding an iOS themed Shell, and a Xamarin Shell where iOS and Android adhere to their platform themes by default. 
-
-> NOTE! Until we implement the full extent of the [Drawing spec](https://github.com/xamarin/Xamarin.Forms/issues/2452), the design of controls will still be rooted in the native UI tool kit for each platform. Drawing aims to provide an optional path to easily achieving the same UI design across multiple platforms.
-
 
 # We Want Your Feedback!
 
