@@ -2,9 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:Gastropod"
-             Title="Store Home"
+             Title="Gastropods"
              x:Class="Gastropod.MainPage">
-    <FlexLayout AlignItems="Center" AlignContent="Center" Direction="Column">
+    
+    <Shell.TitleView>
+        <ContentView>
+            <Image Source="iconXamarin" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="-42,0,0,0"
+                   />
+        </ContentView>
+    </Shell.TitleView>
+    
+    <FlexLayout 
+        AlignItems="Center"
+        JustifyContent="Center"
+        Direction="Column">
         <Label Text="Home Page" />
     </FlexLayout>
 </ContentPage>

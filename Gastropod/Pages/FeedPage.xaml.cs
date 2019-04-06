@@ -51,5 +51,12 @@ namespace Gastropod
     {
         public string Text { get; set; }
         public string Description { get; set; }
+        public string Image
+        {
+            get
+            {
+                return $"https://loremflickr.com/320/240/{Text}%20shell";
+            }
+        }
     }
 }
