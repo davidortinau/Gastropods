@@ -20,15 +20,10 @@
         </Grid>
     </Shell.FlyoutHeader>
     
-    <FlyoutItem FlyoutIcon="iconXamarin.png" Title="Home">
-        <ShellContent Route="home">
-            <local:MainPage/>
-        </ShellContent>
+    <FlyoutItem FlyoutIcon="iconXamarin.png" Title="Home" Style="{StaticResource SecondaryShell}">
+        <ShellContent Route="home" ContentTemplate="{DataTemplate local:FeedPage}"/>
     </FlyoutItem>
-
-    <FlyoutItem FlyoutIcon="iconXamarin.png" Title="Feed" Style="{StaticResource SecondaryShell}">
-        <ShellContent Route="feed" ContentTemplate="{DataTemplate local:FeedPage}"/>
-    </FlyoutItem>
+    
 
     <FlyoutItem Route="tabsandwich" Title="Tab Sandwich" FlyoutIcon="iconXamarin.png" Style="{StaticResource TertiaryShell}">
         <Tab Route="activity" Title="Activity" Icon="iconXamarin.png">
