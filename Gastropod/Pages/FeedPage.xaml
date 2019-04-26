@@ -34,7 +34,7 @@
                                        Aspect="AspectFill"/>
                                 
                                 <BoxView BackgroundColor="#000000"
-                                         Opacity="0.6"/>
+                                         Opacity="0.4"/>
                                 
                                 <Label Text="{Binding Text}"
                                        Margin="15"

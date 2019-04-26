@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Gastropod.Pages.LoginPage"
+             Shell.NavBarIsVisible="true"
+             >
+    
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[
+            .body {
+                color: #fff;
+                align-items: center;
+                justify-content: center;
+                background-color: Silver;
+                flex-direction: column;
+            }
+
+            .container {
+                background-color: #0078D7;
+                width: 300;
+                height: 340;
+                flex-direction: column;
+                margin-top: -30;
+            }
+
+            .login-form {
+                height: 260;
+                flex-direction: column;
+                margin-top: 20;
+            }
+
+            .logo {
+                font-size: 20;
+                margin-top: 40;
+                text-align: center;
+            }
+
+            entry {
+                margin: 10 20 0;
+                color: #fff;
+                height: 40;
+            }
+
+            button {
+                background-color: #F25022;
+            }
+
+            .Valid {
+                background-color: #fff;
+            }
+
+            .InValid {
+                background-color: #ff0000;
+            }
+
+            .strength {
+                margin-top: 20;
+            }
+            ]]>
+        </StyleSheet>
+        
+    </ContentPage.Resources>
+    
+    <FlexLayout class="body" x:Name="Form">
+        <FlexLayout x:Name="LoginForm" class="container">
+            <Label Text="Hello, Visual" class="logo" FlexLayout.Shrink="0"/>
+            <FlexLayout class="login-form">
+                <Entry x:Name="UserNameEntry" 
+                       IsSpellCheckEnabled="false" 
+                       MaxLength="7" 
+                       Placeholder="Username"/>
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Password" 
+                       IsPassword="true"/>
+                
+                
+            </FlexLayout>
+            <StackLayout FlexLayout.AlignSelf="End" 
+                         FlexLayout.Shrink="0"
+                             Margin="20,25" 
+                             Spacing="25"
+                             Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="CANCEL" 
+                            BackgroundColor="Transparent"
+                           FontSize="15" 
+                           VerticalOptions="Center" 
+                            Clicked="Handle_Clicked"
+                            />
+                    <Button Text="LOGIN" 
+                            Padding="15,0" 
+                            Clicked="Handle_Clicked"
+                            />
+                </StackLayout>
+        </FlexLayout>
+    </FlexLayout>
+    
+</ContentPage>

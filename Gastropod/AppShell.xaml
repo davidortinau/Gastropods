@@ -8,7 +8,7 @@
        FlyoutHeaderBehavior="CollapseOnScroll"
        Title="Gastropods"
        x:Name="self"
-       x:Class="Gastropod.Shell">
+       x:Class="Gastropod.AppShell">
 
     <Shell.FlyoutHeader>
         <Grid HeightRequest="300">
@@ -23,7 +23,6 @@
     <FlyoutItem FlyoutIcon="iconXamarin.png" Title="Home" Style="{StaticResource SecondaryShell}">
         <ShellContent Route="home" ContentTemplate="{DataTemplate local:FeedPage}"/>
     </FlyoutItem>
-    
 
     <FlyoutItem Route="tabsandwich" Title="Tab Sandwich" FlyoutIcon="iconXamarin.png" Style="{StaticResource TertiaryShell}">
         <Tab Route="activity" Title="Activity" Icon="iconXamarin.png">
@@ -73,6 +72,9 @@
         <MenuItem Text="Take a Photo" Icon="photo.png"
                   BindingContext="{x:Reference self}"
                   Command="{Binding TakePhotoCommand}"/>
+        <MenuItem Text="Login" 
+                  BindingContext="{x:Reference self}"
+                  Command="{Binding LoginCommand}"/>
     </Shell.MenuItems>
 
     
