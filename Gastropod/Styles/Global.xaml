@@ -1,27 +1,51 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xaml-comp compile="true" ?>
-<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <Style x:Key="BaseStyle" TargetType="Element">
-        <Setter Property="Shell.ShellBackgroundColor" Value="#1B3022" />
-        <Setter Property="Shell.ShellForegroundColor" Value="White" />
-        <Setter Property="Shell.ShellTitleColor" Value="White" />
-        <Setter Property="Shell.ShellDisabledColor" Value="#B4FFFFFF" />
-        <Setter Property="Shell.ShellUnselectedColor" Value="#95FFFFFF" />
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Style x:Key="BaseStyle"
+           ApplyToDerivedTypes="True"
+           TargetType="Element">
+        <Setter Property="Shell.BackgroundColor"
+                Value="#1B3022" />
+        <Setter Property="Shell.ForegroundColor"
+                Value="White" />
+        <Setter Property="Shell.TitleColor"
+                Value="White" />
+        <Setter Property="Shell.DisabledColor"
+                Value="#B4FFFFFF" />
+        <Setter Property="Shell.UnselectedColor"
+                Value="#95FFFFFF" />
     </Style>
-    <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
-    <Style x:Key="SecondaryShell" TargetType="Element" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Shell.ShellBackgroundColor" Value="#AF3800" />
+    <Style TargetType="ShellItem"
+           BasedOn="{StaticResource BaseStyle}" />
+    <Style x:Key="SecondaryShell"
+           TargetType="Element"
+           BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="Shell.BackgroundColor"
+                Value="#AF3800" />
     </Style>
-    <Style x:Key="TertiaryShell" TargetType="Element" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Shell.ShellBackgroundColor" Value="#FA7921" />
+    <Style x:Key="TertiaryShell"
+           TargetType="Element"
+           BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="Shell.BackgroundColor"
+                Value="#FA7921" />
     </Style>
-    <Style x:Key="QuaternaryShell" TargetType="Element" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Shell.ShellBackgroundColor" Value="#FE9920" />
+    <Style x:Key="QuaternaryShell"
+           TargetType="Element"
+           BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="Shell.BackgroundColor"
+                Value="#FE9920" />
     </Style>
-    <Style x:Key="QuinaryShell" TargetType="Element" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Shell.ShellBackgroundColor" Value="#566E3D" />
+    <Style x:Key="QuinaryShell"
+           TargetType="Element"
+           BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="Shell.BackgroundColor"
+                Value="#566E3D" />
     </Style>
-    <Style x:Key="SenaryShell" TargetType="Element" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Shell.ShellBackgroundColor" Value="#1B3022" />
+    <Style x:Key="SenaryShell"
+           TargetType="Element"
+           BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="Shell.BackgroundColor"
+                Value="#1B3022" />
     </Style>
 </ResourceDictionary>

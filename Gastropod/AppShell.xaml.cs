@@ -28,14 +28,13 @@ namespace Gastropod
 
         void GoToCamera()
         {
-            Shell.Current.GoToAsync("app:///gastropod/toptabs/activity/photo?payload=4.x", true);
+            Shell.Current.GoToAsync("//photo?payload=4.x", true);
             Shell.Current.FlyoutIsPresented = false;
         }
 
         void GoToLogin()
         {
-            Shell.Current.GoToAsync("login", true);
-            //Shell.Current.Navigation.PushModalAsync(new LoginPage(), true);
+            Shell.Current.Navigation.PushModalAsync(new LoginPage(), true);
             Shell.Current.FlyoutIsPresented = false;
         }
     }
