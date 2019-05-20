@@ -9,7 +9,7 @@ namespace Gastropod.Pages
     {
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Shell.Current.SendBackButtonPressed();
+            Shell.Current.Navigation.PopModalAsync();
         }
 
         public LoginPage()

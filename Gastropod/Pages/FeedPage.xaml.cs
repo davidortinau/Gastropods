@@ -13,9 +13,10 @@ namespace Gastropod
         public FeedPage()
         {
             InitializeComponent();
-            AppShell.SetShellTitleColor(this, Color.Blue);
-            AppShell.SetSearchHandler(this, new FeedSearchHandler());
-            AppShell.SetFlyoutBehavior(this, FlyoutBehavior.Disabled);
+
+            Shell.SetTitleColor(this, Color.Blue);
+            Shell.SetSearchHandler(this, new FeedSearchHandler());
+            Shell.SetFlyoutBehavior(this, FlyoutBehavior.Disabled);
             Title = "Gastropods";
             BindingContext = this;
         }
@@ -25,10 +26,12 @@ namespace Gastropod
     {
         public FeedSearchHandler()
         {
-            SearchBoxVisibility = SearchBoxVisiblity.Expanded;
+            SearchBoxVisibility = SearchBoxVisibility.Expanded;
             IsSearchEnabled = true;
             ShowsResults = true;
             Placeholder = "Find a seashell...";
+            CancelButtonColor = Color.White;
+            TextColor = Color.White;
         }
 
         protected override void OnQueryChanged(string oldValue, string newValue)
